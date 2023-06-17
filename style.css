@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* index page starts here */
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+.descHR {
+    border: 0;
+    height: 1px;
+    background: #0070cc;
+    margin: 35px 80px;
+}
+
+.linksNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    height: 70px;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+}
+
+nav ul li a:hover {
+    color: #0070cc;
+}
+
+.description {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.description div {
+    width: 30%;
+}
+
+.description .pic img {
+    margin: 25px 70px 0 0;
+    width: 100%;
+}
+
+.description .text-desc .console-name {
+    padding-top: 75px;
+    padding-bottom: 12px;
+    font-size: 2rem;
+    color: #0070cc;
+}
+
+.description .text-desc p {
+    justify-content: center;
+    font-size: 1.7rem;
+}
+
+.specs {
+    display: flex;
+    margin: 30px 0;
+}
+
+.specs .specifics {
+    padding: 0 90px;
+}
+
+.specs .specifics .spec-list {
+    margin: 12px 0;
+    line-height: 1.69rem;
+    font-weight: 400;
+}
+
+.specs .specifics .spec-list .price {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.specs .specifics .spec-list .spec-category {
+    color: #0070cc;
+}
+
+.specs .specifics .spec-list li {
+    list-style-type: none;
+}
+
+.specs .specifics .spec-list .spec-child-list {
+    margin: -27px 120px;
+}
+
+.specs .specifics .buy-now {
+    width: 130px;
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    background-color: #0070cc;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    transition: ease-in-out 75ms;
+}
+
+.specs .specifics .buy-now:hover {
+    width: 160px;
+}
+
+
+
+/* Games Page starts here */
+
+
+.gamesPage {
+    background-image: url(imgs/main-bg.jpg);
+}
+
+.boxContainer {
+    margin-top: 10px;
+}
+
+.foothr {
+    border: 0;
+    height: 1px;
+    background: #0070cc;
+    margin: 10px 20px;
+}
+
+.boxContainer .gameBox-parent {
+    width: 100%;
+    height: 650px;
+    /* border: 1px solid #000; */
+}
+
+.boxContainer .gameBox-parent h2 {
+    margin-top: 5px;
+}
+
+.boxContainer .gameBox-parent .gameBox-child {
+    width: 100%;
+    height: 575px;
+    margin-top: 10px;
+    /* border: 1px solid #000; */
+}
+
+.boxContainer .gameBox-parent .gameBox-child ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.boxContainer .gameBox-parent .gameBox-child .cardList .cardItem {
+    display: inline-block;
+    width: 200px;
+    height: 280px;
+    margin: 5px 5px;
+    padding: 5px;
+}
+
+.boxContainer .gameBox-parent .gameBox-child .cardList .cardItem img:hover {
+    transform: scale(1.05);
+    transition: .4s linear transform;
+    filter: drop-shadow(5px 5px 10px black);
+}
+
+.boxContainer .gameBox-parent .gameBox-child .cardList .cardItem img {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.boxContainer .gameBox-parent .gameBox-child .cardList .cardItem .content {
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+}
+
+.boxContainer .gameBox-parent .gameBox-child .cardList .cardItem .content h6 {
+    width: 100%;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+
+.boxContainer .gameBox-parent .gameBox-child .cardList .cardItem .content p {
+    width: 100%;
+    font-size: 10px;
+    font-size: 600;
+    color: #999;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+
+.footContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footContainer .logo span {
+    margin: 18px 0;
+}
+
+.footContainer span {
+    font-weight: 500;
+}
+
+.footContainer .devs {
+    margin: 0 50px;
+}

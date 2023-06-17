@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(imgs/acc-bg.jpg);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+}
+
+nav ul li a:hover {
+    color: #0070cc;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 80px auto;
+    width: 400px;
+    height: 440px;
+    overflow: hidden;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    transition: height .25s ease;
+}
+
+.formContainer.active {
+    height: 520px;
+
+}
+
+.formContainer .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.formContainer .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.formContainer.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.formContainer .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.formContainer.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+
+.formContainer .form-box h2 {
+    font-size: 1.85rem;
+    text-align: center;
+}
+
+.formContainer .form-box .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 25px 0;
+}
+
+.formContainer .form-box .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.formContainer .form-box .input-box input:focus~label,
+.formContainer .form-box .input-box input:valid~label {
+    top: -3px;
+}
+
+.formContainer .form-box .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.02rem;
+    font-weight: 600;
+    padding: 0 30px 0 5px;
+}
+
+.formContainer .form-box .input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.25rem;
+    line-height: 55px;
+}
+
+.formContainer .form-box .remember {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: -15px 0 15px;
+
+}
+
+.formContainer .form-box .remember input{
+    accent-color: #000;
+    margin-right: 2px;
+}
+
+.formContainer .form-box .btn {
+    width: 100%;
+    height: 40px;
+    background: #000;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.formContainer .form-box .login-register {
+    font-size: 0.87rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.formContainer .form-box .login-register p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.formContainer .form-box .login-register p a:hover {
+    text-decoration: underline;
+}
