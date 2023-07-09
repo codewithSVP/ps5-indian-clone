@@ -243,4 +243,10 @@ nav ul li a:hover {
 
 .footContainer .devs {
     margin: 0 50px;
+    position: absolute;
+    right: 0;
+}
+
+.devs a {
+    margin-left: 4px;
 }
