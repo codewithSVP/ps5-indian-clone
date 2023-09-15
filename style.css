@@ -169,6 +169,8 @@ nav ul li a:hover {
 
 .boxContainer .gameBox-parent h2 {
     margin-top: 5px;
+    margin-left: 30px;
+    font-size: 28px;
 }
 
 .boxContainer .gameBox-parent .gameBox-child {
